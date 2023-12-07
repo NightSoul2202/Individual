@@ -1,0 +1,146 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin:0px; 
+    background-image: url("Galaxy-stars.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+#MainDiv
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height:100%;
+}
+
+
+#H1{
+    margin: 3%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#ImgBall
+{
+    width: 30%;
+    cursor: pointer;
+}
+
+#InputQuestion{
+    width: 20%;
+    height: 5%;
+    margin: 3%;
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0px;
+    text-align: center;
+}
+
+#PAnswer{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+    z-index: 999;
+    position: absolute;
+    top: 48%; left: center;  
+
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+.shake-animation {
+    animation: shake 0.5s 4;
+}
+
+@media (max-width: 1020px) and (min-width: 769px){
+    body {
+        font-size: 20px;
+    }
+
+    #MainDiv {
+        margin: 20px;
+    }
+
+    #H1 {
+        font-size: 60px;
+    }
+
+    #ImgBall {
+        width: 50%;
+    }
+
+    #InputQuestion {
+        width: 50%;
+        font-size: 24px;
+    }
+
+    #PAnswer {
+        font-size: 28px;
+        top: 48%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px){
+    body {
+        background-size: auto;
+    }
+
+    #MainDiv {
+        margin: 10px;
+    }
+
+    #H1 {
+        font-size: 32px;
+    }
+
+    #ImgBall {
+        width: 50%;
+    }
+
+    #InputQuestion {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    #PAnswer {
+        font-size: 20px;
+        top: 47%;
+    }
+}
+
+@media (max-width: 480px) {
+    #H1 {
+        font-size: 28px;
+    }
+
+    #ImgBall {
+        width: 90%;
+    }
+
+    #PAnswer {
+        font-size: 16px;
+        top: 46%;
+    }
+
+    #InputQuestion {
+        width: 90%;
+        font-size: 16px;
+    }
+}
